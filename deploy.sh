@@ -248,14 +248,4 @@ echo
 pr_notice "Don't forget to copy the nameserver from host machine /etc/resolv.conf to this machine if needed!"
 echo
 
-pr "And finally..."
-sleep 2
-pr "Deploy the"
-sleep 2
-cat ${SRC_DIR}/img_hamster_name
-mkdir /var/www/html/img/ >/dev/null
-cp ${SRC_DIR}/img/you.png /var/www/html/img/ || err_exit "Failed to copy you.png"
-echo
 
-sleep 1
-cat ${SRC_DIR}/img_hamster
